@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--dadff-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.edge.basketball.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="바스켓볼"
+                android:layout_centerInParent="true"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="50dp"
+             android:layout_marginEnd="50dp"
+             android:layout_marginTop="100dp"
+             android:hint="이메일"
+             android:id="@+id/email_edit"
+             android:textColorHint="@color/black"
+             android:textColor="@color/black"
+             android:inputType="textEmailAddress"/>
+
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="50dp"
+             android:layout_marginEnd="50dp"
+             android:layout_marginTop="30dp"
+             android:hint="비밀번호"
+             android:id="@+id/pwd_edit"
+             android:textColorHint="@color/black"
+             android:textColor="@color/black"
+             android:inputType="textPassword"/>
+
+
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="50dp"
+             android:layout_marginEnd="50dp"
+             android:layout_marginTop="80dp"
+             android:id="@+id/login_bt"
+             android:background="@android:color/white"
+             android:text="로그인"/>
+
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="50dp"
+             android:layout_marginEnd="50dp"
+             android:id="@+id/signup_bt"
+             android:layout_marginTop="20dp"
+             android:layout_marginBottom="20dp"
+             android:background="@android:color/white"
+             android:text="회원가입"/>
+     </LinearLayout>
+ </ScrollView>
+</LinearLayout>
